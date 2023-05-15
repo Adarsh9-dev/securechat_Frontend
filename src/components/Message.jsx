@@ -6,7 +6,7 @@ import axios from "axios";
 import Typing from "../assets/typing1.gif";
 
 const Message = ({PersonId,setInput,setTyping}) => {
-  const source = process.env.REACT_APP_SOURCE;
+  
   const [user,setUser] = useState({})
   const [name,setName] = useState("");
   const [picture,setPicture] = useState();

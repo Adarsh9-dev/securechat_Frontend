@@ -5,7 +5,7 @@ import Avtar from "../assets/avtar.png";
 import axios from "axios";
 
 const Register = () => {
-  const source = process.env.REACT_APP_SOURCE;
+  
   const navigate = useNavigate();
 
   useEffect(()=> {

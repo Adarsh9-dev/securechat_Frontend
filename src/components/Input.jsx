@@ -9,7 +9,7 @@ import {io} from "socket.io-client";
 
 const Input = ({PersonId,setInput,setTyping}) => {
   console.log(process.env.REACT_APP_SOURCE);
-  const source = process.env.REACT_APP_SOURCE;
+  
   const [id, setId] = useState("");
   const [pId, setPId] = useState("");
   const [socket, setSocket] = useState(null)

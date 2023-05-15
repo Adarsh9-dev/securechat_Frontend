@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 const Persons = (props) => {
-  const source = process.env.REACT_APP_SOURCE;
+  
   const [isMessage, setIsMessage] = useState(false);
   const count = props.uniqueId.indexOf(props.data._id);
 

@@ -2,7 +2,7 @@ import React from 'react'
 import {format} from "timeago.js"
 
 const MessageCard = (props) => {
-  const source = process.env.REACT_APP_SOURCE;
+  
   const Image = `https://securebackend.onrender.com/image/${props.picture}`
   return (
     <>

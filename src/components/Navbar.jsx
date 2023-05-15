@@ -5,7 +5,7 @@ import {faRightFromBracket} from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const source = process.env.REACT_APP_SOURCE;
+  
   const navigate = useNavigate()
   const data = JSON.parse(localStorage.getItem("userData"));
   useEffect(()=> {

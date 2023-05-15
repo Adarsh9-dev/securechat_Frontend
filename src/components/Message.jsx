@@ -30,7 +30,7 @@ const Message = ({PersonId,setInput,setTyping}) => {
       pId: PersonId
     }
 
-    axios.post(`${source}/user/searchById`,data)
+    axios.post(`https://securebackend.onrender.com/user/searchById`,data)
       .then((res)=> {
         setName(res.data[0].name)
         setPicture(res.data[0].file)
@@ -38,7 +38,7 @@ const Message = ({PersonId,setInput,setTyping}) => {
       .catch((err)=>console.log(err))
 
     if (PersonId) {
-      axios.post(`${source}/conversation/personal`,info)
+      axios.post(`https://securebackend.onrender.com/conversation/personal`,info)
         .then((res)=> {
           console.log(res);
           setMessageData(res.data);
@@ -59,7 +59,7 @@ const Message = ({PersonId,setInput,setTyping}) => {
             uId: user._id,
             pId: PersonId
           }
-          axios.post(`${source}/conversation/personal`,info)
+          axios.post(`https://securebackend.onrender.com/conversation/personal`,info)
           .then((res)=> {
             setMessageData(res.data);
             setIsMessage(true);

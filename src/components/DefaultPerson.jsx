@@ -16,7 +16,7 @@ const Persons = (props) => {
         }
     },[])
 
-  const image = `${source}/image/${props.data.file}`
+  const image = `https://securebackend.onrender.com/image/${props.data.file}`
   return (
     <div className='Person'>
       <img src={props.data.file ? image : NoUser} alt="User Image"  className='PersonImage'/>

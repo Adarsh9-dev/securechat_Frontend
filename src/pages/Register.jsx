@@ -42,7 +42,7 @@ const Register = () => {
     }
     // console.log("data is",formData);
     if (data.name&&data.email&&data.password&&(data.password === data.con_pass)) {
-      axios.post(`${source}/user/auth`,formData,config)
+      axios.post(`https://securebackend.onrender.com/user/auth`,formData,config)
       .then((res)=> {
         alert(res.data.message)
         navigate('/login');

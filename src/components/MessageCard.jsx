@@ -3,7 +3,7 @@ import {format} from "timeago.js"
 
 const MessageCard = (props) => {
   const source = process.env.REACT_APP_SOURCE;
-  const Image = `${source}/image/${props.picture}`
+  const Image = `https://securebackend.onrender.com/image/${props.picture}`
   return (
     <>
     {

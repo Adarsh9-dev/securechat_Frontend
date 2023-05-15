@@ -21,7 +21,7 @@ const Search = (props) => {
   const [activeNow, setActiveNow] = useState([]);
   
   useEffect(()=> {
-    setSocket(io(`${source}`))
+    setSocket(io(`https://securebackend.onrender.com`))
   },[])
   
   useEffect(()=> {
@@ -42,7 +42,7 @@ const Search = (props) => {
     let pInfo = {
       "senderId": userInfo._id
     }
-    axios.post(`${source}/conversation/all`,pInfo)
+    axios.post(`https://securebackend.onrender.com/conversation/all`,pInfo)
     .then((res)=> {
 
       setUniqueId(res.data.uInfo) 
@@ -58,7 +58,7 @@ const Search = (props) => {
     const data = {
       name: e.target.value
     }
-    axios.post(`${source}/user/search`,data)
+    axios.post(`https://securebackend.onrender.com/user/search`,data)
     .then((res)=> {
       if (res.data.length === 0) {
         setIsUser(true);

@@ -19,7 +19,7 @@ const Input = ({PersonId,setInput,setTyping}) => {
   const person = "";
 
   useEffect(()=> {
-    setSocket(io(`${source}`))
+    setSocket(io(`https://securebackend.onrender.com`))
   },[])
 
 
@@ -95,7 +95,7 @@ const Input = ({PersonId,setInput,setTyping}) => {
       receverId: PersonId,
       message: message
     }
-    axios.post(`${source}/conversation/create`, messageData)
+    axios.post(`https://securebackend.onrender.com/conversation/create`, messageData)
       .then(() => {
         setInput(message);
       })

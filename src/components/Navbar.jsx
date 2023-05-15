@@ -21,7 +21,7 @@ const Navbar = () => {
     }
   }
 
-  const image = `${source}/image/${data.file}`
+  const image = `https://securebackend.onrender.com/image/${data.file}`
   // console.log(data.file)
   return (
     <div className='Navbar'>

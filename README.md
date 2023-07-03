@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Chat Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a chat application built using HTML, CSS, JavaScript, React, Node.js, MongoDB, and Socket.io. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Login functionality
+- Signup functionality
+- Landing page
+- Real-time chat using Socket.io
+- Online and typing show functionality
+- Integration with multiple APIs
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [https://securechatapplication.netlify.app/](https://securechatapplication.netlify.app/) to view it in your browser.
+- HTML
+- CSS
+- JavaScript
+- React
+- Node.js
+- MongoDB
+- Socket.io
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/Adarsh9-dev/securechat_Frontend
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd chat-application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies for the server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+4. Install MongoDB and make sure it's running on your local machine or provide a MongoDB connection URL in the `.env` file.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Navigate to the client directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd client
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Install the dependencies for the client:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
+7. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Deployed on https://securechatapplication.netlify.app
 
-### Code Splitting
+## Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Rename the `.env.example` file to `.env` in both the server and client directories.
 
-### Analyzing the Bundle Size
+2. In the server `.env` file, add your MongoDB connection URL:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+MONGODB_URI=your_mongodb_connection_url
 
-### Making a Progressive Web App
+3. Configure any additional API keys or settings required for the chat application in the server `.env` file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Usage
 
-### Advanced Configuration
+1. Register an account and log in to the chat application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Explore the landing page to view active users.
 
-### Deployment
+3. Send Message to anyone present on this.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Start chatting with other users in real-time using Socket.io.
 
-### `npm run build` fails to minify
+5. View online users and see typing indicators when someone is typing a message.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. Interact with the multiple APIs integrated into the application for additional functionality.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
